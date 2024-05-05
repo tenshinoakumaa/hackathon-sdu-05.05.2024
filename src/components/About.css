@@ -1,0 +1,38 @@
+s.about-container {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.about-item {
+  transform: translateY(50px);
+  animation: slideIn 1s forwards;
+}
+
+.about-item:nth-child(even) {
+  animation-delay: 0s;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
