@@ -32,7 +32,7 @@ export default function Nav() {
           />
         </li>
         <li>
-          <ul className="flex items-center space-x-6">
+          <ul className="flex items-center space-x-12">
             <li className="cursor-pointer hover:text-slate-500">
               <Link to={"/"}>Главная</Link>
             </li>
@@ -41,9 +41,6 @@ export default function Nav() {
             </li>
             <li className="cursor-pointer hover:text-slate-500">
               <Link to={"/FAQ"}>FAQ</Link>
-            </li>
-            <li className="cursor-pointer hover:text-slate-500">
-              <Link to={"/help"}>Помощь</Link>
             </li>
             <Link to={"/apply"}>
               <button className="p-4 bg-green-500 rounded-xl text-white hover:bg-green-800">
